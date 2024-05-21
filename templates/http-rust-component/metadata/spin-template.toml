@@ -1,0 +1,8 @@
+manifest_version = "1"
+id = "http-rust-component"
+description = "HTTP request handler using Rust, building directly to component"
+tags = ["http", "rust"]
+
+[parameters]
+project-description = { type = "string",  prompt = "Description", default = "" }
+http-path = { type = "string", prompt = "HTTP path", default = "/...", pattern = "^/\\S*$" }
